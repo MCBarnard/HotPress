@@ -11,3 +11,8 @@ To get up and running:
 * npm install
 
 * npm run dev
+
+EMAIL: tovaba6677@iconmle.com
+https://www.db4free.net/phpMyAdmin/index.php?route=/sql&db=hotpress&table=users&pos=0
+thinus
+kickstart

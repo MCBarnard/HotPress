@@ -30,7 +30,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('user.index');
+        $user = Auth::user();
+        return view('user.index', ['user' => $user]);
     }
 
     /**
@@ -40,7 +41,8 @@ class HomeController extends Controller
      */
     public function adminHome()
     {
-        return view('admin.index');
+        $user = Auth::user();
+        return view('admin.index', ['user' => $user]);
     }
 
 }

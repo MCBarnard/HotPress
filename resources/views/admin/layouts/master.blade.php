@@ -59,6 +59,7 @@
     <!-- responsive CSS
 		============================================ -->
     <link rel="stylesheet" href="{{ asset('admin/adminlte/css/responsive.css') }}">
+    <link rel="stylesheet" href="{{ asset('admin/css/index.css') }}">
     <!-- modernizr JS
 		============================================ -->
     <script src="{{ asset('admin/adminlte/js/vendor/modernizr-2.8.3.min.js') }}"></script>
@@ -73,7 +74,9 @@
 <!-- Start Welcome area -->
 <div class="all-content-wrapper">
     @include('admin.layouts.navbar')
-    @yield('content')
+    <div id="main-content-wrapper">
+        @yield('content')
+    </div>
     @include('admin.layouts.footer')
 </div>
 <!-- jquery
