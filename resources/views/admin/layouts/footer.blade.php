@@ -1,11 +1,8 @@
-<div class="footer-copyright-area">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="footer-copy-right">
-                    <p>Copyright © {{ date('Y') }} <a href="/">HotPress</a> All rights reserved.</p>
-                </div>
-            </div>
-        </div>
+<footer class="main-footer">
+    <!-- To the right -->
+    <div class="float-right d-none d-sm-inline">
+        Anything you want
     </div>
-</div>
+    <!-- Default to the left -->
+    <strong>Copyright &copy; {{ date('Y') }} <a href="#">HotPress</a>.</strong> All rights reserved.
+</footer>

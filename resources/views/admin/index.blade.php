@@ -1,76 +1,84 @@
-@extends('admin.layouts.master')
+@extends('admin.layouts.index')
+
+@section('head')
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0">Starter Page</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active">Starter Page</li>
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+@endsection
 
 @section('content')
-    <div id="admin-index-main-wrapper" class="section-admin container-fluid">
-        <div class="row admin text-center">
-            <div class="col-md-12">
-                <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                        <div class="admin-content analysis-progrebar-ctn res-mg-t-15">
-                            <h4 class="text-left text-uppercase"><b>Orders</b></h4>
-                            <div class="row vertical-center-box vertical-center-box-tablet">
-                                <div class="col-xs-3 mar-bot-15 text-left">
-                                    <label class="label bg-green">30% <i class="fa fa-level-up" aria-hidden="true"></i></label>
-                                </div>
-                                <div class="col-xs-9 cus-gh-hd-pro">
-                                    <h2 class="text-right no-margin">10,000</h2>
-                                </div>
-                            </div>
-                            <div class="progress progress-mini">
-                                <div style="width: 78%;" class="progress-bar bg-green"></div>
-                            </div>
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                            </p>
+
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="margin-bottom:1px;">
-                        <div class="admin-content analysis-progrebar-ctn res-mg-t-30">
-                            <h4 class="text-left text-uppercase"><b>Tax Deduction</b></h4>
-                            <div class="row vertical-center-box vertical-center-box-tablet">
-                                <div class="text-left col-xs-3 mar-bot-15">
-                                    <label class="label bg-red">15% <i class="fa fa-level-down" aria-hidden="true"></i></label>
-                                </div>
-                                <div class="col-xs-9 cus-gh-hd-pro">
-                                    <h2 class="text-right no-margin">5,000</h2>
-                                </div>
-                            </div>
-                            <div class="progress progress-mini">
-                                <div style="width: 38%;" class="progress-bar progress-bar-danger bg-red"></div>
-                            </div>
+
+                    <div class="card card-primary card-outline">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                            </p>
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div><!-- /.card -->
+                </div>
+                <!-- /.col-md-6 -->
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="m-0">Featured</h5>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">Special title treatment</h6>
+
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                        <div class="admin-content analysis-progrebar-ctn res-mg-t-30">
-                            <h4 class="text-left text-uppercase"><b>Revenue</b></h4>
-                            <div class="row vertical-center-box vertical-center-box-tablet">
-                                <div class="text-left col-xs-3 mar-bot-15">
-                                    <label class="label bg-blue">50% <i class="fa fa-level-up" aria-hidden="true"></i></label>
-                                </div>
-                                <div class="col-xs-9 cus-gh-hd-pro">
-                                    <h2 class="text-right no-margin">$70,000</h2>
-                                </div>
-                            </div>
-                            <div class="progress progress-mini">
-                                <div style="width: 60%;" class="progress-bar bg-blue"></div>
-                            </div>
+
+                    <div class="card card-primary card-outline">
+                        <div class="card-header">
+                            <h5 class="m-0">Featured</h5>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                        <div class="admin-content analysis-progrebar-ctn res-mg-t-30">
-                            <h4 class="text-left text-uppercase"><b>Yearly Sales</b></h4>
-                            <div class="row vertical-center-box vertical-center-box-tablet">
-                                <div class="text-left col-xs-3 mar-bot-15">
-                                    <label class="label bg-purple">80% <i class="fa fa-level-up" aria-hidden="true"></i></label>
-                                </div>
-                                <div class="col-xs-9 cus-gh-hd-pro">
-                                    <h2 class="text-right no-margin">$100,000</h2>
-                                </div>
-                            </div>
-                            <div class="progress progress-mini">
-                                <div style="width: 60%;" class="progress-bar bg-purple"></div>
-                            </div>
+                        <div class="card-body">
+                            <h6 class="card-title">Special title treatment</h6>
+
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
                     </div>
                 </div>
+                <!-- /.col-md-6 -->
             </div>
-        </div>
+            <!-- /.row -->
+        </div><!-- /.container-fluid -->
     </div>
 @endsection

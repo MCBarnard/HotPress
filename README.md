@@ -6,6 +6,8 @@ To get up and running:
 
 * php artisan db:seed --class=CreateUsersSeeder
 
+* php artisan db:seed --class=PayFastSeeder
+
 * composer install
 
 * npm install
