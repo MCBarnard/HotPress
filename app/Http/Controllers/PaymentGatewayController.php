@@ -9,12 +9,12 @@ class PaymentGatewayController extends Controller
 {
     public function index () {
         $data = Payfast::get()->first();
-        return view('admin.paymentgateway.show', ['data' => $data]);
+        return view('admin.PaymentGateway.show', ['data' => $data]);
     }
 
     public function edit () {
         $data = Payfast::get()->first();
-        return view('admin.paymentgateway.edit', ['data' => $data]);
+        return view('admin.PaymentGateway.edit', ['data' => $data]);
     }
 
     public function update (Request $request) {
