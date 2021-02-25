@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
 
 class HomeController extends Controller
 {
@@ -19,7 +20,9 @@ class HomeController extends Controller
 
 
     public function logout () {
+        Log::debug(__METHOD__ . ": BOF");
         Auth::logout();
+        Log::debug(__METHOD__ . ": EOF");
         return Redirect()->route('login');
     }
 
@@ -30,7 +33,9 @@ class HomeController extends Controller
      */
     public function index()
     {
+        Log::debug(__METHOD__ . ": BOF");
         $user = Auth::user();
+        Log::debug(__METHOD__ . ": EOF");
         return view('user.index', ['user' => $user]);
     }
 
@@ -41,7 +46,9 @@ class HomeController extends Controller
      */
     public function adminHome()
     {
+        Log::debug(__METHOD__ . ": BOF");
         $user = Auth::user();
+        Log::debug(__METHOD__ . ": EOF");
         return view('admin.index', ['user' => $user]);
     }
 

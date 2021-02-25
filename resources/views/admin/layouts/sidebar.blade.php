@@ -59,7 +59,7 @@
                 </li>
                 <li class="nav-item {{ Route::is('admin.stock.*') ? "menu-open" : "" }}">
                     <a href="#" class="nav-link {{ Route::is('admin.stock.*') ? "active" : "" }}">
-                        <i class="fa fa-shopping-bag text-yellow" aria-hidden="true"></i>
+                        <i class="nav-icon fa fa-shopping-bag text-yellow" aria-hidden="true"></i>
                         <p>
                             Inventory
                             <i class="right fas fa-angle-left"></i>
@@ -76,7 +76,7 @@
                 </li>
                 <li class="nav-item">
                     <a href="{{ route('admin.paymentSettings') }}" class="nav-link {{ Route::is('admin.paymentSettings.*') ? "active" : "" }}">
-                        <i class="fa fa-credit-card text-green" aria-hidden="true"></i>
+                        <i class="nav-icon fa fa-credit-card text-green" aria-hidden="true"></i>
                         <p>
                             Payment Gateway Settings
                         </p>
@@ -84,7 +84,7 @@
                 </li>
                 <li class="nav-item">
                     <a href="{{ route('session.logout') }}" class="nav-link">
-                        <i class="fa fa-power-off text-danger mr-2" aria-hidden="true"></i>
+                        <i class="nav-icon fa fa-power-off text-danger" aria-hidden="true"></i>
                         <p>
                             Logout
                         </p>

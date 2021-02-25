@@ -14,6 +14,150 @@
   color: #1da702;
 }
 
+.text-black {
+  color: #131313;
+}
+
 #edit-payfast-bottom-card {
   padding: 0;
+  max-width: 660px;
+}
+#edit-payfast-bottom-card .card-title {
+  float: unset;
+}
+#edit-payfast-bottom-card p {
+  max-width: 550px;
+}
+#edit-payfast-bottom-card .text-block-toggle {
+  display: flex;
+}
+
+#edit-payfast-settings label {
+  display: block;
+}
+
+.simple-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.simple-row .simple-container {
+  max-width: 992px;
+  width: 100%;
+  margin: auto;
+}
+.simple-row .simple-container .simple-card {
+  width: 100%;
+  max-width: 480px;
+  flex: unset;
+}
+
+.content-wrapper .content-header {
+  max-width: 992px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+@media (max-width: 1270px) {
+  .content-wrapper .content-header {
+    padding: 15.5px;
+  }
+}
+.test-payment-toggle {
+  position: absolute;
+  right: 7px;
+  top: 7px;
+}
+
+.toggle {
+  /* Rounded sliders */
+}
+.toggle .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.toggle .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.toggle .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+}
+.toggle .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+.toggle input:checked + .slider {
+  background-color: #ff2d2d;
+}
+.toggle input:focus + .slider {
+  box-shadow: 0 0 1px #ff2d2d;
+}
+.toggle input:checked + .slider:before {
+  transform: translateX(26px);
+}
+.toggle .slider.round {
+  border-radius: 34px;
+}
+.toggle .slider.round:before {
+  border-radius: 50%;
+}
+
+.test-mode-save-container {
+  display: flex;
+  justify-content: space-between;
+}
+.test-mode-save-container #cancel-payfast-settings-btn {
+  width: 100%;
+  text-align: center;
+  height: 79px;
+  line-height: 64px;
+}
+.test-mode-save-container #edit-payfast-settings-btn {
+  width: 100%;
+  height: 65px;
+  text-align: center;
+  line-height: 50px;
+  max-width: 386px;
+  margin: 50px 0 auto 16px;
+}
+.test-mode-save-container button {
+  width: 100%;
+  height: 79px;
+  text-align: center;
+  line-height: 50px;
+  margin-top: 16px;
+}
+.test-mode-save-container #edit-payfast.button-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 0 auto 16px;
+  max-width: 386px;
+}
+
+#payfast-error-blob {
+  display: none;
+  background-color: #c17e85;
+}
+
+.payfast-success-blob {
+  display: none;
+  background-color: #4e9a60;
 }
