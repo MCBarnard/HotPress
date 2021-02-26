@@ -1,6 +1,6 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="/home" class="brand-link">
+    <a href="{{ route('admin.home') }}" class="brand-link">
         <img src="{{ asset('AdminLayout/admin-lte/dist/img/AdminLTELogo.png') }}" class="brand-image img-circle elevation-3">
         <span class="brand-text font-weight-light">HotPress</span>
     </a>

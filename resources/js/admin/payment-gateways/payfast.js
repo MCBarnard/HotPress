@@ -52,6 +52,7 @@ $(document).ready(() => {
         console.log(msg)
         $(".payfast-success-blob").text(msg);
         $(".payfast-success-blob").css('display','block');
+        $(".print-error-msg").css('display','none');
     }
 
     function printErrorMsg (msg) {
