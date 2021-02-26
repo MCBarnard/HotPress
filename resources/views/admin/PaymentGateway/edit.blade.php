@@ -27,12 +27,12 @@
                     <div class="alert alert-secondary" role="alert">
                         Test mode is currently activated so PayFast will not ask for any card credentials on transactions
                     </div>
+                    <div class="payfast-success-blob print-success-message alert alert-success" role="alert">
+                        A simple success alert—check it out!
+                    </div>
                 </div>
             </div>
             @endif
-                <div class="payfast-success-blob print-success-message alert alert-success" role="alert">
-                    A simple success alert—check it out!
-                </div>
             <div id="payfast-error-blob" class="alert alert-danger print-error-msg">
                 <ul></ul>
             </div>
