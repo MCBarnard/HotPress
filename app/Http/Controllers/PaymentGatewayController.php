@@ -37,6 +37,7 @@ class PaymentGatewayController extends Controller
         ]);
 
         if ($validator->passes()) {
+            $request['test_mode_active'] = $request->test_mode_active === "true" ? 1 : 0;
             Payfast::get()->first()->update($request->all());
 
             Log::debug(__METHOD__ . ": EOF");

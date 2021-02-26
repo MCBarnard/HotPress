@@ -64,22 +64,6 @@
                 <div class="simple-row">
                     <div class="simple-container">
                         <div class="test-mode-save-container">
-                            <div id="edit-payfast-bottom-card" class="card border-primary mb-3">
-                                <div class="card-header">Activate Live PayFast Credentials</div>
-                                <div class="card-body text-primary d-block">
-                                    <h5 class="card-title">Activate PayFast will switch the system into live payments</h5>
-                                    <div class="text-block-toggle">
-                                        <p class="card-text text-black">When the system is in test mode, PayFast transactions will be able
-                                            to go through without making an actual payment. This is used to test the system</p>
-                                        <div class="toggle test-payment-toggle">
-                                            <label class="switch">
-                                                <input type="checkbox" checked>
-                                                <span class="slider round"></span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                             <a href="{{ route('admin.paymentSettings.edit') }}" id="edit-payfast-settings-btn" class="btn btn-outline-secondary">Edit</a>
                         </div>
                     </div>

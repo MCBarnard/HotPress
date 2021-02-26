@@ -18,6 +18,7 @@ class Payfast extends Model
         'live_passphrase',
         'test_merchant_id',
         'test_merchant_key',
-        'test_passphrase'
+        'test_passphrase',
+        'test_mode_active'
     ];
 }

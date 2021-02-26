@@ -26,7 +26,7 @@ $(document).ready(() => {
                     test_merchant_id: parseInt($test_merchant_id.val()),
                     test_merchant_key: $test_merchant_key.val(),
                     test_passphrase: $test_passphrase.val(),
-                    test_mode_active:$test_mode.val() === "on"
+                    test_mode_active:$test_mode.is(':checked')
                 },
                 success: result => {
                     response = JSON.parse(result);
